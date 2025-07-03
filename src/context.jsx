@@ -1,8 +1,15 @@
 import { useContext, useReducer, useEffect, createContext } from "react";
+import {
+  CLEAR_CART,
+  REMOVE,
+  INCREASE,
+  DECREASE,
+  LOADING,
+  DISPLAY_ITEMS,
+} from './actions'
+
 import reducer from './reducer'
-const AppContext = createContext();
-
-
+const AppContext = createContext()
 
 const initialState = {
   loading: false,
